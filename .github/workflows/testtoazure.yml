@@ -33,7 +33,7 @@ jobs:
           push: true
           tags: index.docker.io/${{ secrets.AzureAppService_ContainerUsername_ae1009dcf13a40259f3fd85c04777920 }}/elgroliero/toazuredevops:${{ github.sha }}
           file: ./Dockerfile
-
+          
   deploy:
       runs-on: ubuntu-latest
       needs: build
